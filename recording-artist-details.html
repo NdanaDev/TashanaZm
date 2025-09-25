@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title >Tashana Zm | Recording Artist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="artist-details.css">
+</head>
+<body>
+
+    <div class="split-container">
+      <!-- Left Side - Content -->
+      <div class="content-side">
+        <header class="header">
+          <a href="Home_page.html"><h1 class="artist-name">Tashana ZM</h1></a>
+          <p class="artist-title">Singer / Songwriter</p>
+          
+          <nav class="main-nav">
+            <a href="#music" class="nav-link active">Music</a>
+            <a href="#bio" class="nav-link">Bio</a>
+            <a href="#gigs" class="nav-link">Gigs</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </nav>
+        </header>
+  
+        <main class="main-content">
+          <section id="music" class="section active">
+            <h2 class="section-title">Latest Release(Feature to be implemented soon.)</h2>
+            <div class="music-player">
+              <div class="album-art">
+                <img src="https://placehold.co/400x400/8a5d34/white?text=Tashana+ZM" alt="Album Art">
+              </div>
+              <div class="track-info">
+                <h3>Golden Nights</h3>
+                <p>Midnight Melodies • 2024</p>
+                <div class="player-controls">
+                  <button class="control-btn"><i class="fas fa-backward"></i></button>
+                  <button class="play-btn"><i class="fas fa-play"></i></button>
+                  <button class="control-btn"><i class="fas fa-forward"></i></button>
+                </div>
+                <div class="progress-container">
+                  <div class="progress-bar"></div>
+                </div>
+                <p class="time-display">0:00 / 3:45</p>
+              </div>
+            </div>
+  
+            <div class="music-player" style="margin-top: 2rem;">
+              <div class="album-art">
+                <img src="https://placehold.co/400x400/5d538a/white?text=Tashana+ZM" alt="Single Art">
+              </div>
+              <div class="track-info">
+                <h3>Whispering Wind (Single)</h3>
+                <p>Single Release • 2023</p>
+                <div class="player-controls">
+                  <button class="control-btn"><i class="fas fa-backward"></i></button>
+                  <button class="play-btn"><i class="fas fa-play"></i></button>
+                  <button class="control-btn"><i class="fas fa-forward"></i></button>
+                </div>
+              </div>
+            </div>
+          </section>
+  
+          <section id="bio" class="section">
+            <h2 class="section-title">Biography</h2>
+            <div class="bio-content">
+              <p>Tashana ZM has been singing for as long as she can remember, performing at school concerts, church events, and larger stages. She began writing music at a young age and first stepped into a studio to record covers. Her early studio endeavors included a cover of Justin Bieber's 'Holy' featuring Chance the Rapper, as well as 'Bloody Samaritan' by Ayra Starr</p>
+
+              <p>Tashana later made her debut in the industry with her original music through an EP titled 'Rebirth'. The songs on the EP were written way back in 2018 and 2019, and it was released in 2022. Although it was an experience for her, over time her music has evolved, and she is now set to release new music very soon.</p>
+          </section>
+  
+          <section id="gigs" class="section">
+            <h2 class="section-title">Upcoming Gigs(Feature to be implemented soon.)</h2>
+            <ul class="gigs-list">
+              <li class="gig-item">
+                <div class="gig-date">June 15, 2025</div>
+                <div class="gig-info">
+                  <div class="gig-venue">Decapo</div>
+                  <div class="gig-location">Lusaka, Zambia</div>
+                </div>
+                <div class="gig-actions">
+                  <button class="btn btn-primary">Get Tickets</button>
+                </div>
+              </li>
+              <li class="gig-item">
+                <div class="gig-date">July 2, 2025</div>
+                <div class="gig-info">
+                  <div class="gig-venue">Black</div>
+                  <div class="gig-location">Lusaka, Zambia</div>
+                </div>
+                <div class="gig-actions">
+                  <button class="btn btn-primary">Get Tickets</button>
+                </div>
+              </li>
+              <li class="gig-item">
+                <div class="gig-date">August 12, 2025</div>
+                <div class="gig-info">
+                  <div class="gig-venue">Cargo 88</div>
+                  <div class="gig-location">Lusaka, Zambia</div>
+                </div>
+                <div class="gig-actions">
+                  <button class="btn btn-primary">Get Tickets</button>
+                </div>
+              </li>
+            </ul>
+          </section>
+  
+          <section id="contact" class="section">
+            <h2 class="section-title">Get In Touch</h2>
+            <form class="contact-form" action="https://formsubmit.co/natashamwansa586@gmail.com" method="POST">
+              <div class="form-group">
+                <label class="form-label" for="name">Name</label>
+                <input type="text" id="name" class="form-input" placeholder="Your name">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email</label>
+                <input type="email" id="email" class="form-input" placeholder="Your email">
+              </div>
+              <div class="form-group full-width">
+                <label class="form-label" for="subject">Subject</label>
+                <input type="text" id="subject" class="form-input" placeholder="Subject of your message">
+              </div>
+              <div class="form-group full-width">
+                <label class="form-label" for="message">Message</label>
+                <textarea id="message" class="form-textarea" placeholder="Your message"></textarea>
+              </div>
+              <div class="form-group full-width">
+                <button type="submit" class="submit-btn">Send Message</button>
+              </div>
+            </form>
+          </section>
+  
+          
+        </main>
+  
+        <footer class="footer">
+          <div class="social-links">
+            <a href="https://www.instagram.com/tashana_zm?igsh=ODRlNG0ybWtkZ2h5" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@tashanazm" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.facebook.com/share/15uqsGQJVf/" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/natasha-mwansa-129006260/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <p class="copyright">&copy; 2025 Tashana ZM. All rights reserved.</p>
+        </footer>
+      </div>
+      
+      <!-- Right Side - Image -->
+      <div class="image-side">
+        <img src="https://placehold.co/800x1200/333/white?text=Tashana+ZM" alt="Tashana ZM">
+      </div>
+    </div>
+
+  <script src="recording-artist-details.js"></script>
+</body>
+</html>

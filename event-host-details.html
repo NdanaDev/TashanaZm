@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I'm Tahana</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="event-host-details.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand" href="Home_page.html">Tashana Zm</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#explore my work">Explore My Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hello</h1>
+      <h2>I'm <span id="typing-text"></span></h2>
+      <p>An engaging emcee who brings energy and flair to every event, effortlessly guiding the audience through memorable experiences with charisma and professionalism.</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        From birthday bashes to corporate events, my journey as an event host has been a wild ride! I started small, hosting parties for friends and family, but soon grew to tackle bigger stages and more complex events. With each success, my passion for creating unforgettable experiences only grew stronger.
+      </p>
+      <p>
+        As a seasoned event manager, I thrive on ensuring every detail is perfect. If anything goes wrong, I'm always ready to swoop in and save the day. With years of experience, I've honed my skills in engaging diverse audiences - from energetic kids to discerning adults - and tailoring my approach to meet their unique needs.
+      </p>
+      <p>
+        What sets me apart? My natural flair for event hosting, combined with a keen eye for detail and a passion for delivering exceptional experiences. Whether you're looking to celebrate a milestone or host a high stakes corporate event, I'm here to bring your vision to life with creativity, expertise, and a dash of fun!
+      </p>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2 class="section-title">Explore My Work</h2>
+      <div class="portfolio-grid">
+            <!-- Event 1 -->
+            <a href="Pictures/WhatsApp Image 2025-07-07 at 20.45.07_b40f7048.jpg" data-lightbox="portfolio" data-title="Corporate Gala Hosting" class="portfolio-item">
+              <img src="Pictures/WhatsApp Image 2025-07-07 at 20.45.07_b40f7048.jpg" alt="Corporate Event">
+              <div class="overlay">
+                <span>Corporate Event</span>
+              </div>
+            </a>
+            
+            <!-- Event 2 -->
+            <a href="Pictures/486452945_642932515133475_5199699010539429982_n.jpg" data-lightbox="portfolio" data-title="Wedding Emcee" class="portfolio-item">
+              <img src="Pictures/486452945_642932515133475_5199699010539429982_n.jpg" alt="Karaoke">
+              <div class="overlay">
+                <span>Karaoke</span>
+              </div>
+            </a>
+            
+            <!-- Add more events as needed -->
+            <a href="Pictures/WhatsApp Image 2025-07-07 at 20.45.18_d8382b0e.jpg" data-lightbox="portfolio" data-title="Birthday Party" class="portfolio-item">
+              <img src="Pictures/WhatsApp Image 2025-07-07 at 20.45.18_d8382b0e.jpg" alt="Birthday Party">
+              <div class="overlay">
+                <span>Birthday Party</span>
+              </div>
+            </a>
+            
+            
+          </div>
+        </div>
+      </section>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <p>Have an event coming up? Let’s make it unforgettable. Reach out to book, collaborate, or ask any questions. I’d love to hear from you!</p>
+      <p class="contact-links">
+        <a href="mailto:natashamwansa586@gmail.com" class="text-decoration-none"><i class="bi bi-envelope-fill me-2"></i> natashamwansa586@gmail.com</a><br>
+        <a href="tel:+260970687657" class="text-decoration-none"><i class="bi bi-telephone-fill me-2"></i> +260 970687657</a><br>
+        <a href="https://www.instagram.com/tashana_zm?igsh=ODRlNG0ybWtkZ2h5" target="_blank" class="text-decoration-none"><i class="bi bi-instagram me-2"></i> @tashanazm</a>
+      </p>
+
+      <form action="https://formsubmit.co/natashamwansa586@gmail.com" method="POST" class="mt-4 text-start">
+       
+        <input type="hidden" name="_subject" value="New event hosting inquiry!">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="thank-you.html">
+        
+        <div class="mb-3">
+          <label for="name" class="form-label">Your Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Your Email</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="4" placeholder="How can I help you?" required></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-custom">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="event-host-details.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
