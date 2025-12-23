@@ -171,18 +171,23 @@
         <a href="https://www.instagram.com/tashana_zm?igsh=ODRlNG0ybWtkZ2h5" target="_blank" class="text-decoration-none"><i class="bi bi-instagram me-2"></i> @tashanazm</a>
       </p>
 
-      <form class="mt-4 text-start">
+      <form class="mt-4 text-start" action="https://formsubmit.co/natashamwansa586@gmail.com" method="POST">
+        <!-- FormSubmit Configuration -->
+        <input type="hidden" name="_subject" value="New Commercial/Editorial Inquiry from Website">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+
         <div class="mb-3">
           <label for="name" class="form-label">Your Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
         </div>
         <div class="mb-3">
           <label for="email" class="form-label">Your Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
         </div>
         <div class="mb-3">
           <label for="project" class="form-label">Project Type</label>
-          <select class="form-control" id="project" required>
+          <select class="form-control" id="project" name="project_type" required>
             <option value="">Select project type</option>
             <option value="commercial">Commercial Campaign</option>
             <option value="editorial">Editorial Shoot</option>
@@ -192,7 +197,7 @@
         </div>
         <div class="mb-3">
           <label for="message" class="form-label">Project Details</label>
-          <textarea class="form-control" id="message" rows="4" placeholder="Tell me about your project vision..." required></textarea>
+          <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tell me about your project vision..." required></textarea>
         </div>
         <div class="text-center">
           <button type="submit" class="btn btn-custom">Send Message</button>

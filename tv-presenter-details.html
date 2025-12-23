@@ -153,15 +153,20 @@
             </div>
           </div>
         </div>
-        <form class="contact-form">
+        <form class="contact-form" action="https://formsubmit.co/natashamwansa586@gmail.com" method="POST">
+          <!-- FormSubmit Configuration -->
+          <input type="hidden" name="_subject" value="New TV Presenter Inquiry from Website">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+
           <div class="form-group">
-            <input type="text" placeholder="Your Name" required>
+            <input type="text" name="name" placeholder="Your Name" required>
           </div>
           <div class="form-group">
-            <input type="email" placeholder="Your Email" required>
+            <input type="email" name="email" placeholder="Your Email" required>
           </div>
           <div class="form-group">
-            <select required>
+            <select name="project_type" required>
               <option value="">Project Type</option>
               <option>TV Hosting</option>
               <option>Voice Over</option>
@@ -170,7 +175,7 @@
             </select>
           </div>
           <div class="form-group">
-            <textarea placeholder="Your Message" required></textarea>
+            <textarea name="message" placeholder="Your Message" required></textarea>
           </div>
           <button type="submit">Send Inquiry</button>
         </form>
