@@ -147,4 +147,39 @@ document.addEventListener('DOMContentLoaded', () => {
   } catch (error) {
     console.error('Error initializing scroll animations:', error);
   }
+
+  // Initialize focus trap for mobile menu accessibility
+  try {
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (mobileMenuBtn && navLinks && typeof createFocusTrap !== 'undefined') {
+      const focusTrap = createFocusTrap(navLinks, {
+        onEscape: () => {
+          // Close menu when Escape is pressed
+          navLinks.classList.remove('nav-active');
+        }
+      });
+
+      // Activate focus trap when menu opens
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          if (mutation.target.classList.contains('nav-active')) {
+            focusTrap.activate();
+          } else {
+            focusTrap.deactivate();
+            // Return focus to menu button
+            mobileMenuBtn.focus();
+          }
+        });
+      });
+
+      observer.observe(navLinks, {
+        attributes: true,
+        attributeFilter: ['class']
+      });
+    }
+  } catch (error) {
+    console.error('Error setting up focus trap:', error);
+  }
 });

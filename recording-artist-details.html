@@ -7,8 +7,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="artist-details.css">
+  <style>
+    .skip-to-content {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px 16px;
+      text-decoration: none;
+      z-index: 10001;
+      border-radius: 0 0 4px 0;
+      font-weight: 600;
+    }
+    .skip-to-content:focus {
+      top: 0;
+    }
+  </style>
 </head>
 <body>
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
     <div class="split-container">
       <!-- Left Side - Content -->
@@ -25,7 +43,7 @@
           </nav>
         </header>
   
-        <main class="main-content">
+        <main class="main-content" id="main-content">
           <section id="music" class="section active">
             <h2 class="section-title">Latest Release(Feature to be implemented soon.)</h2>
             <div class="music-player">

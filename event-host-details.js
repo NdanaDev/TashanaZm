@@ -84,3 +84,40 @@ try {
 } catch (error) {
     console.error('Error setting up lazy loading:', error);
 }
+
+// Initialize focus trap for mobile menu accessibility
+try {
+    const navbar = document.querySelector('#navbarNav');
+    const toggleBtn = document.querySelector('.navbar-toggler');
+
+    if (navbar && toggleBtn && typeof createFocusTrap !== 'undefined') {
+        const focusTrap = createFocusTrap(navbar, {
+            onEscape: () => {
+                // Close Bootstrap collapse when Escape is pressed
+                const bsCollapse = bootstrap.Collapse.getInstance(navbar);
+                if (bsCollapse) {
+                    bsCollapse.hide();
+                }
+            }
+        });
+
+        // Activate focus trap when menu opens
+        navbar.addEventListener('shown.bs.collapse', () => {
+            focusTrap.activate();
+        });
+
+        // Deactivate focus trap when menu closes
+        navbar.addEventListener('hidden.bs.collapse', () => {
+            focusTrap.deactivate();
+        });
+
+        // Ensure focus returns to toggle button after closing
+        navbar.addEventListener('hidden.bs.collapse', () => {
+            if (toggleBtn) {
+                toggleBtn.focus();
+            }
+        });
+    }
+} catch (error) {
+    console.error('Error setting up focus trap:', error);
+}

@@ -15,11 +15,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <style>
+        /* Skip to content link for accessibility */
+        .skip-to-content {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: #fff;
+            padding: 8px 16px;
+            text-decoration: none;
+            z-index: 10000;
+            border-radius: 0 0 4px 0;
+            font-weight: 600;
+        }
+        .skip-to-content:focus {
+            top: 0;
+        }
+    </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
     <div class="scroll-container">
         <!-- Hero Section -->
-        <section class="hero-section">
+        <section class="hero-section" role="banner">
             <div class="hero-content">
                 <h1 class="hero-title">Welcome to Tashana Zm</h1>
                 <p class="hero-subtitle">Discover a world of talent and creativity</p>
@@ -33,7 +52,8 @@
         </section>
 
         <!-- Section 1: Event Show Host -->
-        <section class="fullpage-section event-host" id="event-host">
+        <section class="fullpage-section event-host" id="event-host" role="region" aria-labelledby="event-host-title">
+            <div id="main-content"></div>
             <div class="image-container">
                 <img src="Pictures/WhatsApp Image 2025-07-07 at 20.45.02_5b409f9e.jpg"
                      srcset="Pictures/WhatsApp Image 2025-07-07 at 20.45.02_5b409f9e.jpg,
@@ -48,7 +68,7 @@
             </div>
             <div class="image-overlay"></div>
             <div class="content">
-                <h1 class="title">Event Show Host</h1>
+                <h1 id="event-host-title" class="title">Event Show Host</h1>
                 <p class="description">An engaging emcee who brings energy and flair to every event, effortlessly guiding the audience through memorable experiences with charisma and professionalism.</p>
                 <a href="event-host-details.html" class="contact-btn-link" tabindex="0" aria-label="Learn more about Event Show Host services">
                     <button class="contact-btn" aria-label="Learn more about Event Show Host services">See more</button>
@@ -68,7 +88,7 @@
                            (max-width: 640px) 600px,
                            (max-width: 960px) 800px,
                            100vw"
-                     >
+                     alt="TV Presenter Tashana Zm on set">
             </div>
             <div class="image-overlay"></div>    
             <div class="content">
