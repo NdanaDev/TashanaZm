@@ -450,8 +450,15 @@ body {
 }
 
 .commercial-editorial {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
                 url('Pictures/IMG-20250119-WA0005.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.academic-leadership {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('Pictures/WhatsApp Image 2025-12-31 at 13.07.12 (1).jpeg');
     background-size: cover;
     background-position: center center;
 }
@@ -512,7 +519,8 @@ body {
 
 /* Ensure overlays are present on all sections */
 .recording-artist .image-overlay,
-.commercial-editorial .image-overlay {
+.commercial-editorial .image-overlay,
+.academic-leadership .image-overlay {
     position: absolute;
     top: 0;
     left: 0;
